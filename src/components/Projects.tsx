@@ -45,7 +45,7 @@ const projects = [
 
 export function Projects() {
     return (
-        <section id="work" className="py-24 bg-secondary/5 relative">
+        <section id="work" className="py-10 bg-secondary/5 relative">
             <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
             <div className="container px-4 relative z-10 mx-auto">
                 <motion.div
