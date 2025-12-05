@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export function Hero() {
     return (
-        <section className="relative min-h-[45vh] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[55vh] flex items-center justify-center overflow-hidden pt-20">
             {/* Background */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/50 to-background z-10" />
