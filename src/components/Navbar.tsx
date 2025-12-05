@@ -18,25 +18,25 @@ export function Navbar() {
                 <NavigationMenu className="hidden md:flex">
                     <NavigationMenuList>
                         <NavigationMenuItem>
-                            <Link href="#work" legacyBehavior passHref>
-                                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-white/5 data-[active]:bg-white/10")}>
+                            <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-white/5 data-[active]:bg-white/10")}>
+                                <Link href="#work">
                                     Work
-                                </NavigationMenuLink>
-                            </Link>
+                                </Link>
+                            </NavigationMenuLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Link href="#about" legacyBehavior passHref>
-                                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-white/5 data-[active]:bg-white/10")}>
+                            <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-white/5 data-[active]:bg-white/10")}>
+                                <Link href="#about">
                                     About
-                                </NavigationMenuLink>
-                            </Link>
+                                </Link>
+                            </NavigationMenuLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Link href="#contact" legacyBehavior passHref>
-                                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-white/5 data-[active]:bg-white/10")}>
+                            <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-white/5 data-[active]:bg-white/10")}>
+                                <Link href="#contact">
                                     Contact
-                                </NavigationMenuLink>
-                            </Link>
+                                </Link>
+                            </NavigationMenuLink>
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>

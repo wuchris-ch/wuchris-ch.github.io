@@ -23,7 +23,7 @@ const projects = [
         tags: ["Next.js", "Stripe", "Supabase", "Tailwind"],
         image: "/screenshots/ecom-test.png",
         github: "https://github.com/wuchris-ch/ecom-test",
-        demo: "https://ecom-test.vercel.app"
+        demo: "https://ecom-test-nu.vercel.app/"
     },
     {
         title: "Fundus DX ML",
@@ -37,7 +37,7 @@ const projects = [
         title: "DSPy RAG Tutorial",
         description: "Advanced RAG implementation using DSPy for optimizing language model prompts and retrieval. A deep dive into modern AI architectures.",
         tags: ["DSPy", "RAG", "LLM", "Python"],
-        image: "/assets/rag-placeholder.png",
+        image: "",
         github: "https://github.com/wuchris-ch/dspy-rag-tutorial",
         demo: null
     }
@@ -47,7 +47,7 @@ export function Projects() {
     return (
         <section id="work" className="py-24 bg-secondary/5 relative">
             <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
-            <div className="container px-4 relative z-10">
+            <div className="container px-4 relative z-10 mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -73,12 +73,16 @@ export function Projects() {
                             <Card className="overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group h-full flex flex-col hover:shadow-2xl hover:shadow-primary/10">
                                 <div className="relative h-64 overflow-hidden">
                                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors z-10" />
-                                    <Image
-                                        src={project.image}
-                                        alt={project.title}
-                                        fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                    />
+                                    {project.image ? (
+                                        <Image
+                                            src={project.image}
+                                            alt={project.title}
+                                            fill
+                                            className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        />
+                                    ) : (
+                                        <div className="w-full h-full bg-secondary/10" />
+                                    )}
                                 </div>
                                 <CardHeader>
                                     <div className="flex justify-between items-start">

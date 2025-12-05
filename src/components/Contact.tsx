@@ -9,7 +9,7 @@ export function Contact() {
     return (
         <section id="contact" className="py-24 bg-secondary/5 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-0" />
-            <div className="container px-4 text-center relative z-10">
+            <div className="container px-4 text-center relative z-10 mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

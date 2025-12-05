@@ -7,14 +7,14 @@ import Link from "next/link"
 
 export function Hero() {
     return (
-        <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
             {/* Background */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/50 to-background z-10" />
                 <img
                     src="/assets/hero-bg.png"
                     alt="Background"
-                    className="w-full h-full object-cover opacity-40 scale-105 animate-slow-zoom"
+                    className="w-full h-full object-cover opacity-40 dark:opacity-40 opacity-20 scale-105 animate-slow-zoom"
                 />
             </div>
 
@@ -24,7 +24,7 @@ export function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-6 font-outfit bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/50 drop-shadow-2xl">
+                    <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-6 font-outfit bg-clip-text text-transparent bg-gradient-to-b from-foreground via-foreground to-foreground/50 drop-shadow-2xl">
                         Chris Wu
                     </h1>
                 </motion.div>
@@ -35,7 +35,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                 >
                     <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-                        Software Engineer & Full Stack Developer crafting <span className="text-primary font-medium">artistic</span>, <span className="text-primary font-medium">clean</span>, and <span className="text-primary font-medium">beautiful</span> digital experiences.
+                        Fullstack Software and AI Developer. Crafting <span className="text-primary font-medium">intelligent</span>, <span className="text-primary font-medium">scalable</span>, and <span className="text-primary font-medium">efficient</span> digital experiences.
                     </p>
                 </motion.div>
 

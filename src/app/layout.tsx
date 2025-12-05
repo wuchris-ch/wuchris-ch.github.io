@@ -20,7 +20,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Chris Wu | Software Engineer",
-  description: "Personal portfolio of Chris Wu, a Software Engineer and Full Stack Developer.",
+  description: "Personal portfolio of Chris Wu, a Fullstack Software and AI Developer crafting intelligent, scalable, and efficient digital experiences.",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
