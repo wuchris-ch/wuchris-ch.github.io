@@ -25,7 +25,7 @@ export function Hero() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-6 font-outfit bg-clip-text text-transparent bg-gradient-to-b from-foreground via-foreground to-foreground/50 drop-shadow-2xl">
-                        Chris Wu
+                        Hi, I&apos;m Chris
                     </h1>
                 </motion.div>
 
@@ -35,7 +35,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                 >
                     <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-                        Fullstack Software and AI Developer. Crafting <span className="text-primary font-medium">intelligent</span>, <span className="text-primary font-medium">scalable</span>, and <span className="text-primary font-medium">efficient</span> digital experiences.
+                        Fullstack Software Engineer. I build <span className="text-primary font-medium">intelligent</span>, <span className="text-primary font-medium">scalable</span>, and <span className="text-primary font-medium">efficient</span> digital experiences by leveraging modern AI.
                     </p>
                 </motion.div>
 

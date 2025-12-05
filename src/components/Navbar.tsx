@@ -12,7 +12,7 @@ export function Navbar() {
         <div className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4">
             <div className="flex items-center justify-between w-full max-w-5xl px-6 py-3 bg-background/60 backdrop-blur-md border border-border/40 rounded-full shadow-lg transition-all hover:border-border/80 hover:shadow-primary/10">
                 <Link href="/" className="text-xl font-bold tracking-tighter hover:text-primary transition-colors font-outfit">
-                    CW
+                    Chris Wu
                 </Link>
 
                 <NavigationMenu className="hidden md:flex">
